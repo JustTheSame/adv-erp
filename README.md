@@ -28,5 +28,8 @@ $ git submodule foreach git checkout master
 $ git submodule foreach git pull origin master
 ```
 
-
+Build war Package
+-------------------------
+```androiddatabinding
 gradlew -x test build
+```
