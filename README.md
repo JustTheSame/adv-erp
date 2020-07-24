@@ -19,8 +19,8 @@ Axelor Open Suite is built on top of [Axelor Open Platform](https://github.com/a
 Download
 -------------------------
 ```bash
-$ git clone git@github.com:axelor/open-suite-webapp.git
-$ cd open-suite-webapp
+$ git clone git@github.com:JustTheSame/adv-erp.git
+$ cd adv-erp
 $ git checkout master
 $ git submodule init
 $ git submodule update
@@ -30,6 +30,18 @@ $ git submodule foreach git pull origin master
 
 Build war Package
 -------------------------
-```androiddatabinding
+```
 gradlew -x test build
+```
+
+## Build Image
+
+```sh
+$ docker build -t adv/adv-erp .
+```
+
+## Run app container
+
+```sh
+$ docker run -it -p 8080:80 adv/adv-erp
 ```
